@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <main>
         <h1>Hi Mom</h1>
-        <p>{count}</p>
+        <p>Count: {count}</p>
         <div>
           <button onClick={() => setCount((currentCount) => currentCount + 1)}>
             Increase Count
