@@ -11,13 +11,13 @@ name: ESLint
 
 on:
   push:
-    branches: [dev]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [dev]
-    types: [opened, ready_for_review, reopened]
-  schedule:
-    - cron: "15 14 * * 5"
+    branches:
+      - "dev"
+      - "feature/*"
+      - "!main"
+  #pull_request:
+  #branches: [dev]
+  #types: [opened, ready_for_review, reopened]
 
 jobs:
   eslint:
@@ -33,9 +33,5 @@ jobs:
       - name: Init project
         run: npm install
 
-      - name: Turn off NextJs data collection
-        run: npx next telemetry disable
-
-      - name: Run ESLint
+      - name: Run ESLint (Turn off NextJs data collection)
         run: npm run lint
-        continue-on-error: true
