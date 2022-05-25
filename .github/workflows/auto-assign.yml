@@ -3,7 +3,7 @@ on:
   pull_request:
     branches:
       - "dev"
-    types: [opened, ready_for_review]
+    types: [opened, ready_for_review, reopened]
 
 jobs:
   add-reviews:
