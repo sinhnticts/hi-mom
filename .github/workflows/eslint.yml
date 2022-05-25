@@ -52,5 +52,7 @@ jobs:
       - name: Init project
         run: npm install
 
-      - name: Run ESLint (Turn off NextJs data collection)
-        run: npm run lint
+      - name: Run ESLint
+        run:
+          - npx next telemetry disable
+          - npm run lint
