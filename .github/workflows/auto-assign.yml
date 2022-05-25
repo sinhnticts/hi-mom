@@ -1,6 +1,8 @@
 name: Auto Assign Reviewer
 on:
   pull_request:
+    branch:
+      - "dev"
     types: [opened, ready_for_review]
 
 jobs:
