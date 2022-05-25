@@ -1,8 +1,8 @@
-name: Actions on branch dev
+name: Actions on branch main
 on:
   push:
     branches:
-      - 'main'
+      - "main"
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
