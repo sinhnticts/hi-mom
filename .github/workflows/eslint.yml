@@ -13,7 +13,6 @@ on:
   push:
     branches: [dev]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [dev]
     types: [opened, ready_for_review, reopened]
   schedule:
@@ -34,4 +33,4 @@ jobs:
         run: npm install
 
       - name: Run ESLint (Turn off NextJs data collection)
-        run: npx next telemetry disable && npm run lint
+        run: npm run lint
