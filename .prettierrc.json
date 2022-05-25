@@ -15,5 +15,10 @@
     "tabWidth": 2,
     "trailingComma": "es5",
     "useTabs": false,
-    "parser": "typescript"
+    "parser": "typescript",
+    "importOrder": [
+        "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
 }
