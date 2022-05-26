@@ -34,7 +34,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
+          cache: 'yarn'
 
       # - name: Cache node modules
       #   id: cache-npm
@@ -56,7 +56,7 @@ jobs:
       #   run: npm list
 
       - name: Init project
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build Project
-        run: npm run build
+        run: yarn build
