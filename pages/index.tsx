@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import { useState } from 'react';
 
 import styles from '../styles/Home.module.css';
@@ -27,7 +26,7 @@ const Home: NextPage = () => {
           </button>
         </div>
         <br />
-        <Image
+        <img
           src="https://picsum.photos/300"
           alt="random image"
           width={300}
