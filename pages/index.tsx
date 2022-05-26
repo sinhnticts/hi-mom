@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           </button>
         </div>
         <br />
-        <img
+        <Image
           src="https://picsum.photos/300"
           alt="random image"
           width={300}
