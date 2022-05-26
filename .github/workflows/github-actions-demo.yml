@@ -16,7 +16,13 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
 
       - name: "List cwd"
-      - run: ls -al
+      - run: |
+          echo cwd
+          ls -al
+      
+      - name: List files in the repository
+        run: |
+          ls -al ${{ github.workspace }}
       # - name: Cache node modules
       #   id: cache-npm
       #   uses: actions/cache@v3
